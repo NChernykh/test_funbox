@@ -1,0 +1,9 @@
+mixin product-list(data)
+  section.product-list
+    .container
+
+      h1.title Ты сегодня покормил кота?
+      ul.product-list__list 
+        each item in data
+          li.product-list__item 
+            +product-card(item)  

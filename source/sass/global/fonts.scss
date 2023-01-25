@@ -12,10 +12,32 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Trebuc";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/trebuc.woff2") format("woff2"),
+    url("../fonts/trebuc.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Exo2-reg";
+
+  font-display: swap;
+  src:
+    url("../fonts/exo2-regular.woff2") format("woff2"),
+    url("../fonts/exo2-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100;
+  font-family: "Exo2-thin";
+
+  font-display: swap;
+  src:
+    url("../fonts/exo2-thin.woff2") format("woff2"),
+    url("../fonts/exo2-thin.woff") format("woff");
 }

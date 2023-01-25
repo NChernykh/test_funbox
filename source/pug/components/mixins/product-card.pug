@@ -1,0 +1,49 @@
+mixin product-card(item)
+    .product-card(class= item.isDisabled ? "disabled" : null)
+        a.product-card__link(href=item.href)
+            .product-card__info
+                span.product-card__head= item.head 
+                span.product-card__selected= item.headHover
+                h2.product-card__title=item.title 
+                span.product-card__desc=item.desc
+                p.product-card__path
+                    case item.amt
+                        when 1
+                            span.product-card__amt=item.amt
+                            span.product-card__text порция
+                        when 2
+                        when 3
+                        when 4
+                            span.product-card__amt=item.amt
+                            span.product-card__text порции
+                        default    
+                            span.product-card__amt=item.amt
+                            span.product-card__text порций
+                p.product-card__path  
+                    case item.gift  
+                        when 0
+                            - break
+                        when 1
+                            span.product-card__text мышь в подарок 
+                        when 2
+                        when 3
+                        when 4
+                            span.product-card__amt=item.gift   
+                            span.product-card__text мыши в подарок 
+                        default     
+                            span.product-card__amt=item.gift   
+                            span.product-card__text мышей в подарок     
+                if item.add 
+                    p.product-card__path
+                        span.product-card__text=item.add
+            .product-card__img        
+                +picture(item.img.folder, item.img.name, item.img.format, item.img.width, item.img.height, item.img.alt)
+            .product-card__additional
+                span.product-card__weight=item.weight 
+                span.product-card__unit=item.units
+        if item.isDisabled 
+            p.product-card__offer= `Печалька, ${item.desc} закончился.`
+        else
+            p.product-card__offer Чего сидишь? Порадуй котэ, 
+                a.product-card__offer-link(href="#") купи.
+            p.product-card__offer.product-card__offer--selected=item.selected        

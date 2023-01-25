@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>ProjectName</title>
+    <title>Нямушка</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="ProjectName — описание">
+    <meta name="description" content="Нямушка">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol></svg></div>
     <div class="wrapper">
-      <header class="header">
-        <div class="container"><span class="header__logo">Логотип</span>
-          <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="#icon-burger"></use>
-              </svg>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 2</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 3</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
       <main>
-        <div class="intro">
+        <section class="product-list">
           <div class="container">
-            <p style="margin-top: 40px;">Текст&nbsp;с&nbsp;мнемониками</p>
-            <p style="margin-top: 40px;">Пример использования +img()</p>
-            <p style="margin-bottom: 40px;"><img src="img/content/placeholder.png" srcset="img/content/placeholder@2x.png 2x" width="120" height="120" alt="Пример">
-            </p>
+            <h1 class="title">Ты сегодня покормил кота?</h1>
+            <ul class="product-list__list"> 
+              <li class="product-list__item"> 
+                <div class="product-card"><a class="product-card__link" href="#">
+                    <div class="product-card__info"><span class="product-card__head">Сказочное заморское меню</span><span class="product-card__selected">котэ не одобряет?</span>
+                      <h2 class="product-card__title">Нямушка</h2><span class="product-card__desc">с фуа-гра</span>
+                      <p class="product-card__path"><span class="product-card__amt">10</span><span class="product-card__text">порций</span>
+                      </p>
+                      <p class="product-card__path"> <span class="product-card__amt">10</span><span class="product-card__text">мышей в подарок     </span>
+                      </p>
+                    </div>
+                    <div class="product-card__img">       
+                      <picture>
+                        <source type="image/webp" srcset="img/content/cat.webp, img/content/cat@2x.webp 2x"><img src="img/content/cat.png" srcset="img/content/cat@2x.png 2x" width="368" height="360" alt="серый кот с цепочкой">
+                      </picture>
+                    </div>
+                    <div class="product-card__additional"><span class="product-card__weight">0,5</span><span class="product-card__unit">кг</span></div></a>
+                  <p class="product-card__offer">Чего сидишь? Порадуй котэ, <a class="product-card__offer-link" href="#">купи.</a></p>
+                  <p class="product-card__offer product-card__offer--selected">Печень утки разварная с артишоками.</p>
+                </div>
+              </li>
+              <li class="product-list__item"> 
+                <div class="product-card"><a class="product-card__link" href="#">
+                    <div class="product-card__info"><span class="product-card__head">Сказочное заморское меню</span><span class="product-card__selected">котэ не одобряет?</span>
+                      <h2 class="product-card__title">Нямушка</h2><span class="product-card__desc">с рыбой</span>
+                      <p class="product-card__path"><span class="product-card__amt">40</span><span class="product-card__text">порций</span>
+                      </p>
+                      <p class="product-card__path"> <span class="product-card__amt">4</span><span class="product-card__text">мыши в подарок </span>
+                      </p>
+                    </div>
+                    <div class="product-card__img">       
+                      <picture>
+                        <source type="image/webp" srcset="img/content/cat.webp, img/content/cat@2x.webp 2x"><img src="img/content/cat.png" srcset="img/content/cat@2x.png 2x" width="368" height="360" alt="серый кот с цепочкой">
+                      </picture>
+                    </div>
+                    <div class="product-card__additional"><span class="product-card__weight">2</span><span class="product-card__unit">кг</span></div></a>
+                  <p class="product-card__offer">Чего сидишь? Порадуй котэ, <a class="product-card__offer-link" href="#">купи.</a></p>
+                  <p class="product-card__offer product-card__offer--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+                </div>
+              </li>
+              <li class="product-list__item"> 
+                <div class="product-card disabled"><a class="product-card__link" href="#">
+                    <div class="product-card__info"><span class="product-card__head">Сказочное заморское меню</span><span class="product-card__selected">котэ не одобряет?</span>
+                      <h2 class="product-card__title">Нямушка</h2><span class="product-card__desc">с курой</span>
+                      <p class="product-card__path"><span class="product-card__amt">100</span><span class="product-card__text">порций</span>
+                      </p>
+                      <p class="product-card__path"> <span class="product-card__amt">5</span><span class="product-card__text">мышей в подарок     </span>
+                      </p>
+                      <p class="product-card__path"><span class="product-card__text">заказчик доволен</span></p>
+                    </div>
+                    <div class="product-card__img">       
+                      <picture>
+                        <source type="image/webp" srcset="img/content/cat.webp, img/content/cat@2x.webp 2x"><img src="img/content/cat.png" srcset="img/content/cat@2x.png 2x" width="368" height="360" alt="серый кот с цепочкой">
+                      </picture>
+                    </div>
+                    <div class="product-card__additional"><span class="product-card__weight">5</span><span class="product-card__unit">кг</span></div></a>
+                  <p class="product-card__offer">Печалька, с курой закончился.</p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>
+        </section>
       </main>
-      <footer class="footer">
-        <div class="container"></div>
-      </footer>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

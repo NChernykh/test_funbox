@@ -11,7 +11,6 @@
 
 html {
   line-height: 1.15; /* 1 */
-
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -39,10 +38,13 @@ main {
 * `article` contexts in Chrome, Firefox, and Safari.
 */
 
-h1 {
-  margin: 0.67em 0;
-
-  font-size: 2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
 }
 
 /* Grouping content
@@ -129,7 +131,6 @@ small {
 sub,
 sup {
   position: relative;
-
   font-size: 75%;
   line-height: 0;
   vertical-align: baseline;

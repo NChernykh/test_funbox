@@ -14,9 +14,9 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $ff-trebuc;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -37,6 +37,13 @@ body {
 a {
   color: $color-default-black;
   text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 img,
