@@ -97,10 +97,10 @@ MAMP для проверки серверных запросов
 Ниже ссылки на последние коммерческие проекты:
 - https://lavrushinskiy.ru
 - https://chistye-prudy.ru
-ВТБ - Исследование клиентского опыта (- https://infografika.agency)
-Академия BIM в Москве (- https://bimacad.ru)
-Главная - УК УЖСК (- https://rempuzhsk.ru)
-Аренда и продажа коммерческой недвижимости в Санкт-Петербурге и Ленинградской области (- https://brightrich.ru)
+- ВТБ - Исследование клиентского опыта (https://infografika.agency)
+- Академия BIM в Москве (https://bimacad.ru)
+- Главная - УК УЖСК (https://rempuzhsk.ru)
+ -Аренда и продажа коммерческой недвижимости в Санкт-Петербурге и Ленинградской области (https://brightrich.ru)
 
 ### Cсылка на тестовый проект https://test-funbox-github-io.vercel.app/#
 
