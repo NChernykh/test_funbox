@@ -9,3 +9,4 @@
 ## Итоговый код попадает в директорию `build`
 
 ### [Ответы на Level 1](/answers.md)
+### Ссылка на тестовое задание https://test-funbox-github-io.vercel.app/#
